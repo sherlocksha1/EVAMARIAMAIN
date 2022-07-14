@@ -145,7 +145,9 @@ async def advantage_spoll_choker(bot, query):
             k = await query.message.edit('നിങ്ങൾ ചോദിച്ച മൂവി റിലീസ് ആയിട്ടില്ല എന്ന് തോന്നുന്നു😔. അല്ലെങ്കിൽ അത് ഞങ്ങൾ അപ്ലോഡ് ചെയ്തിട്ടില്ല😔\nplease wait...')
             await asyncio.sleep(10)
             await k.delete()
-
+        buttons = [[
+            InlineKeyboardButton('🎭 𝐆𝐫𝐨𝐮𝐩 🎭', url='https://t.me/new_movies_group_2021') 
+         ]]
 
 @Client.on_callback_query()
 async def cb_handler(client: Client, query: CallbackQuery):
